@@ -1,0 +1,210 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+::-webkit-scrollbar {
+  width: 7px;
+}
+::-webkit-scrollbar-thumb {
+  background: #3d3d3d;
+}
+::-webkit-scrollbar-track {
+  background: #c9cec8;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+#navbar{
+  z-index: 1;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  top: 0;
+  right: 0;
+  left: 0;
+  height: 80px;
+  box-shadow: 0 0 10px black;
+  background-image: linear-gradient(to right, rgb(65, 109, 35), rgb(45, 78, 18));
+}
+
+#navbar ul{
+  margin-right: 50px;
+  display: flex;
+  gap: 30px;
+  font-family: Arial;
+  list-style-type: none;
+  font-size: 26px;
+}
+
+a{
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.767);
+}
+
+#welcome-section{
+  height: 100vh;
+}
+
+#pic{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+#welcome-text{
+  width: 380px;
+  position: absolute;
+  top: 20%;
+  left: 3%;
+  display: flex;
+  flex-direction: column;
+  font-size: 30px;
+  font-family: Tahoma;  
+  color: lightgoldenrodyellow;
+}
+
+#comment{
+  border-top: 3px solid black;
+  width: 100%;
+  height: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 50px;
+}
+
+#comment img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+#comment p{
+  position: absolute;
+  color: rgb(201, 201, 201);
+  text-shadow: 0 0 5px #000000;
+  font-family: monospace;
+  font-weight: 400;
+}
+
+#projects{
+  background-image: url("./resource/comment.jpg");
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 150px;
+  padding-bottom: 50px;
+}
+
+.project-tile{
+  width: 50%;
+  text-align: center;
+  font-size: 20px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.project-photo{
+  width: 100%;
+}
+
+.multi-pics img{
+  width: 50%;
+}
+
+.project-tile:hover{
+  opacity: 0.7;
+  cursor: pointer;
+}
+
+#contact{
+  height: 50px;
+  background-color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  font-family: Tahoma;
+  transition: font-size 0.1s ease-out,
+              opacity 0.1s;
+}
+
+#contact:hover{
+  opacity: 0.98;
+  font-size: 18px;
+}
+
+@media only screen and (max-width: 600px) {
+  #navbar{
+    z-index: 1;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 80px;
+    box-shadow: 0 0 10px black;
+    background-image: linear-gradient(to right, rgb(65, 109, 35), rgb(45, 78, 18));
+  }
+
+  #navbar ul{
+    font-family: Arial;
+    list-style-type: none;
+    font-size: 18px;
+    margin: auto;
+  }
+
+  a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.767);
+  }
+
+  #welcome-section{
+    height: 100vh;
+  }
+  
+  #pic{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  #welcome-text{
+    width: 380px;
+    position: absolute;
+    top: 75%;
+    left: 10%;
+    display: flex;
+    flex-direction: column;
+    font-size: 18px;
+    font-family: Tahoma;  
+    color: lightgoldenrodyellow;
+  }
+  
+  #comment{
+    border-top: 3px solid black;
+    width: 100%;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: sans-serif;
+    font-size: 20px;
+  }
+  
+  #comment img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  #comment p{
+    position: absolute;
+    color: white;
+    text-shadow: 0 0 5px #000000;
+  }
+}
